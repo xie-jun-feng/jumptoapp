@@ -28,7 +28,7 @@ function jump(){
     //     window.location.href = 'https://sj.qq.com/myapp/detail.htm?apkName=com.wuba.ercar&info=C966D321736B5A0542063FA86D061F12'; // 跳安卓端下载地址 
     // }
     // 是安卓浏览器 
-    if (isAndroid&&is_weixin()&&is_qq) {
+    if (isAndroid&&(is_weixin()||is_qq)) {
         window.location.href = 'https://sj.qq.com/myapp/detail.htm?apkName=com.wuba.ercar&info=C966D321736B5A0542063FA86D061F12'; // 跳安卓端下载地址 
     }else{
         alert(1)
