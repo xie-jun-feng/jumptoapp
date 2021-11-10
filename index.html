@@ -38,7 +38,11 @@ function jump(){
     if (isIOS) {
         if(weixin||qq){
                 alert('提示在safari打开')
-                window.location.href='https://www.apple.com.cn/safari/'
+                window.location.href = "com.58.pricecar://"
+                setTimeout(function(){
+                    window.location.href = 'https://itunes.apple.com/cn/app/id1420407553'; // 跳AppStore下载地址 
+
+                },1000)
             }else{
                 window.location.href = "com.58.pricecar://"
                 setTimeout(function(){
