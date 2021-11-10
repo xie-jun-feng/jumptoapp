@@ -24,8 +24,12 @@ function jump(){
     // 是安卓浏览器 
     if (isAndroid) {
         if(weixin||qq){
-        window.location.href = 'https://sj.qq.com/myapp/detail.htm?apkName=com.wuba.ercar&info=C966D321736B5A0542063FA86D061F12'; // 跳安卓端下载地址 
+        window.location.href = 'http://androidhtml?params=androidJump'; // 跳app 
 
+        setTimeout(()=>{
+            window.location.href = 'https://sj.qq.com/myapp/detail.htm?apkName=com.wuba.ercar&info=C966D321736B5A0542063FA86D061F12'; // 跳安卓端下载地址 
+
+        },1000)
         }
     }
     // 是iOS浏览器 
