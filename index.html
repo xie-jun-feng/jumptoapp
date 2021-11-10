@@ -20,7 +20,7 @@ function jump(){
     let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1;//判断是安卓
     let isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);// 判断是ios
     let weixin= u.indexOf('MicroMessenger') > -1; //是否微信 （2015-01-22新增） 
-    let webKit=u.indexOf('AppleWebKit') > -1;//苹果、谷歌内核
+    // let webKit=u.indexOf('AppleWebKit') > -1;//苹果、谷歌内核
 
     let qq= u.match(/\sQQ/i) == " qq"; //是否QQ 
     // if (webKit) {
@@ -28,7 +28,7 @@ function jump(){
     // }
     // 是安卓浏览器 
     if (isAndroid) {
-        if(is_weixin()||qq){
+        if(weixin||qq){
         window.location.href = 'https://sj.qq.com/myapp/detail.htm?apkName=com.wuba.ercar&info=C966D321736B5A0542063FA86D061F12'; // 跳安卓端下载地址 
 
         }
